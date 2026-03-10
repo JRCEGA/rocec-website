@@ -1,7 +1,7 @@
 export interface Project {
   slug: string;
   title: string;
-  category: "Residencial" | "Comercial" | "Interiores" | "Urbanismo";
+  category: "Residencial" | "Comercial" | "Industrial";
   year: number;
   location: string;
   description: string;
@@ -48,38 +48,20 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "loft-cacho",
-    title: "Loft Cacho",
-    category: "Interiores",
+    slug: "nave-industrial-otay",
+    title: "Nave Industrial Otay",
+    category: "Industrial",
     year: 2024,
-    location: "Col. Cacho, Tijuana, B.C.",
+    location: "Parque Industrial Otay, Tijuana, B.C.",
     description:
-      "Un loft de 280 metros cuadrados reimaginado como una galería para habitar en una de las colonias con más carácter de Tijuana. La carpintería en roble blanco oculta almacenamiento y sistemas mecánicos, permitiendo que el arte y la luz dominen. Una escalera escultórica en acero pavonado conecta los niveles del dúplex, funcionando como circulación y pieza central. Cada superficie está calibrada para la quietud y la calidez.",
+      "Una nave industrial de 5,000 metros cuadrados diseñada para operaciones de manufactura de alta tecnología. La estructura de acero de grandes claros permite una flexibilidad total en la distribución de líneas de producción. Lucernarios estratégicamente ubicados reducen la dependencia de iluminación artificial, mientras que el sistema de ventilación cruzada optimiza las condiciones de trabajo durante todo el año.",
     coverImage:
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80",
+      "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1200&q=80",
     images: [
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&q=80",
-      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80",
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80",
-    ],
-    featured: true,
-  },
-  {
-    slug: "plaza-civica-culiacan",
-    title: "Plaza Cívica Culiacán",
-    category: "Urbanismo",
-    year: 2023,
-    location: "Culiacán, Sinaloa",
-    description:
-      "Un pabellón público que ancla una nueva plaza cívica en el centro de Culiacán. La cubierta perforada de acero corten filtra la luz natural hacia un mercado cubierto y un espacio de reunión comunitario. Paisaje y arquitectura se fusionan mediante bancas integradas, jardines de lluvia y una serie de terrazas escalonadas que invitan a la ocupación en todas las escalas.",
-    coverImage:
-      "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&q=80",
-    images: [
-      "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&q=80",
-      "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=1200&q=80",
-      "https://images.unsplash.com/photo-1524230572899-a752b3835840?w=1200&q=80",
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80",
+      "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1200&q=80",
+      "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1200&q=80",
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+      "https://images.unsplash.com/photo-1581093458791-9f3c3250a8b0?w=1200&q=80",
     ],
     featured: true,
   },
@@ -99,7 +81,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1600585153490-76fb20a32601?w=1200&q=80",
       "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1200&q=80",
     ],
-    featured: false,
+    featured: true,
   },
   {
     slug: "torre-tres-rios",
@@ -120,13 +102,31 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    slug: "spa-agua-caliente",
-    title: "Spa Agua Caliente",
-    category: "Interiores",
+    slug: "planta-procesadora-culiacan",
+    title: "Planta Procesadora Culiacán",
+    category: "Industrial",
+    year: 2023,
+    location: "Culiacán, Sinaloa",
+    description:
+      "Una planta procesadora de alimentos de 8,000 metros cuadrados que integra estándares de inocuidad alimentaria con un diseño arquitectónico que dignifica el espacio de trabajo. Muros de panel aislado y cubierta tipo sándwich garantizan el control térmico. Áreas administrativas con fachada acristalada conectan visualmente con la zona de producción, promoviendo transparencia operativa.",
+    coverImage:
+      "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1200&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1200&q=80",
+      "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1200&q=80",
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+      "https://images.unsplash.com/photo-1581093458791-9f3c3250a8b0?w=1200&q=80",
+    ],
+    featured: false,
+  },
+  {
+    slug: "plaza-comercial-agua-caliente",
+    title: "Plaza Comercial Agua Caliente",
+    category: "Comercial",
     year: 2023,
     location: "Agua Caliente, Tijuana, B.C.",
     description:
-      "Un retiro de bienestar integrado en un desarrollo residencial en la zona de Agua Caliente. El diseño guía a los visitantes a través de habitaciones progresivamente más silenciosas y tenues, creando una experiencia de profundidad en capas. Piedra volcánica regional, madera de parota y yeso artesanal crean una paleta material enraizada en el lugar y la tradición constructiva del noroeste mexicano.",
+      "Una plaza comercial de 3,500 metros cuadrados que reinterpreta el concepto de centro comercial a escala de barrio. Locales de doble altura con fachadas modulares permiten una identidad visual propia a cada comercio, mientras que pasillos abiertos con vegetación regional y pérgolas de acero crean un recorrido agradable. El diseño prioriza la permeabilidad y la conexión con la calle.",
     coverImage:
       "https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?w=1200&q=80",
     images: [
@@ -138,13 +138,13 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    slug: "corredor-verde-otay",
-    title: "Corredor Verde Otay",
-    category: "Urbanismo",
+    slug: "bodega-logistica-mesa-otay",
+    title: "Bodega Logística Mesa de Otay",
+    category: "Industrial",
     year: 2022,
-    location: "Otay, Tijuana, B.C.",
+    location: "Mesa de Otay, Tijuana, B.C.",
     description:
-      "Un parque lineal y corredor de movilidad que recupera un canal pluvial en desuso a través del denso tejido urbano de la zona Otay en Tijuana. El proyecto entrelaza ciclovías, vegetación nativa de la región y áreas de descanso sombreadas a lo largo de un tramo de 2.4 kilómetros, reconectando colonias fragmentadas. Cubiertas tensiles ligeras marcan nodos comunitarios donde convergen mercados, espectáculos y juego.",
+      "Un centro de distribución y bodega logística de 12,000 metros cuadrados estratégicamente ubicado cerca de la garita de Otay. El diseño optimiza los flujos de carga y descarga con andenes a distintas alturas y patios de maniobras amplios. La envolvente de paneles metálicos aislados y la cubierta con tragaluces prismáticos aseguran eficiencia térmica y lumínica para operaciones las 24 horas.",
     coverImage:
       "https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=1200&q=80",
     images: [
@@ -161,8 +161,7 @@ export const categories = [
   "Todos",
   "Residencial",
   "Comercial",
-  "Interiores",
-  "Urbanismo",
+  "Industrial",
 ] as const;
 
 export function getProjectBySlug(slug: string): Project | undefined {

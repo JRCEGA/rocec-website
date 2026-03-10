@@ -20,14 +20,14 @@ export default function Projects() {
         <title>Proyectos — ROCEC Arquitectura</title>
         <meta
           name="description"
-          content="Explora nuestro portafolio de proyectos residenciales, comerciales, de interiores y urbanismo."
+          content="Explora nuestro portafolio de proyectos residenciales, comerciales e industriales."
         />
       </Head>
 
       <AnimatedSection className="mx-auto max-w-6xl px-6 pt-20 pb-24 md:pt-28 md:pb-32">
         <SectionHeading
           title="Proyectos"
-          subtitle="Un cuerpo de trabajo que abarca residencias, hitos comerciales, interiores y espacios públicos."
+          subtitle="Un cuerpo de trabajo que abarca residencias, proyectos comerciales e industriales."
         />
 
         <div className="mb-12 flex flex-wrap gap-3">
@@ -37,7 +37,7 @@ export default function Projects() {
               onClick={() => setActiveCategory(cat)}
               className={`border px-5 py-2 text-sm tracking-wide transition-colors ${
                 activeCategory === cat
-                  ? "border-brand bg-brand text-white"
+                  ? "border-brand bg-brand text-background"
                   : "border-border text-muted hover:border-foreground hover:text-foreground"
               }`}
             >

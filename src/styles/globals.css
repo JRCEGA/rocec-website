@@ -1,13 +1,31 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  --color-background: #fafafa;
+  --color-background: #ffffff;
   --color-foreground: #1a1a1a;
   --color-muted: #6b6b6b;
-  /* Azul marino como color de marca (evita conflicto con accent por defecto de Tailwind) */
-  --color-brand: #001d3b;
+  --color-brand: #062645;
   --color-brand-dark: #001229;
+  --color-brand-light: #798ca4;
   --color-border: #e5e5e5;
+  --color-surface: #f5f5f5;
 
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+.dark {
+  --color-background: #062645;
+  --color-foreground: #ffffff;
+  --color-muted: #aeaeae;
+  --color-brand: #798ca4;
+  --color-brand-dark: #aeaeae;
+  --color-brand-light: #062645;
+  --color-border: #0f3a6a;
+  --color-surface: #0a3052;
+}
+
+html {
+  scroll-behavior: smooth;
 }

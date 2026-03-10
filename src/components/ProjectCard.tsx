@@ -25,7 +25,7 @@ export default function ProjectCard({ project, index = 0 }: ProjectCardProps) {
             className="object-cover transition-transform duration-500 group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
-          <div className="absolute inset-0 bg-foreground/0 transition-colors duration-300 group-hover:bg-foreground/10" />
+          <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/10" />
         </div>
         <div className="mt-4">
           <h3 className="text-lg font-medium text-foreground">

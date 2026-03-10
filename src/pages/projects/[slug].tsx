@@ -54,7 +54,7 @@ export default function ProjectDetail({
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-foreground/30" />
+        <div className="absolute inset-0 bg-black/30" />
       </div>
 
       <AnimatedSection className="mx-auto max-w-4xl px-6 py-16 md:py-20">
