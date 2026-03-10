@@ -24,11 +24,11 @@ export default function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link href="/" className="flex items-center">
           <Image
-            src="/rocec_logo.png"
+            src="/horizontalNoBackground2.png"
             alt="ROCEC - Construcción | Arquitectura"
-            width={140}
-            height={48}
-            className="h-10 w-auto object-contain"
+            width={220}
+            height={40}
+            className="h-9 w-auto object-contain"
             priority
           />
         </Link>

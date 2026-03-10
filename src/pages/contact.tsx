@@ -127,31 +127,17 @@ export default function Contact() {
               <div className="space-y-3 text-muted">
                 <p className="flex items-start gap-2 text-sm">
                   <MapPin size={16} className="mt-0.5 shrink-0" />
-                  Blvd. Agua Caliente 1234, Zona Río
+                  Plaza Mexico, Lasplazas
                   <br />
-                  Tijuana, B.C. 22320
+                  Tijuana, B.C. 22640
                 </p>
                 <p className="flex items-center gap-2 text-sm">
                   <Mail size={16} className="shrink-0" />
-                  estudio@rocec.com
+                  r.cebreros@rocec.mx
                 </p>
                 <p className="flex items-center gap-2 text-sm">
                   <Phone size={16} className="shrink-0" />
-                  +52 (664) 123-4567
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="mb-4 text-sm font-medium uppercase tracking-widest text-foreground">
-                Oficina — Culiacán
-              </h3>
-              <div className="space-y-3 text-muted">
-                <p className="flex items-start gap-2 text-sm">
-                  <MapPin size={16} className="mt-0.5 shrink-0" />
-                  Blvd. Niños Héroes 567, Col. Centro
-                  <br />
-                  Culiacán, Sin. 80000
+                  +52 (664) 368-3857
                 </p>
               </div>
             </div>
@@ -162,8 +148,7 @@ export default function Contact() {
               </h3>
               <div className="space-y-1 text-sm text-muted">
                 <p>Lunes a Viernes: 9:00 AM — 6:00 PM</p>
-                <p>Sábado: Con cita previa</p>
-                <p>Domingo: Cerrado</p>
+                <p>Sábado y Domingo: Cerrado</p>
               </div>
             </div>
 

@@ -100,28 +100,6 @@ export default function About() {
           </div>
         </div>
       </AnimatedSection>
-
-      <AnimatedSection className="border-t border-border">
-        <div className="mx-auto max-w-4xl px-6 py-24 md:py-32">
-          <SectionHeading
-            title="Reconocimientos"
-            subtitle="Premios y distinciones seleccionados."
-          />
-          <div className="divide-y divide-border">
-            {awards.map((award, i) => (
-              <div
-                key={i}
-                className="flex items-baseline justify-between gap-4 py-5"
-              >
-                <span className="text-base text-foreground">{award.title}</span>
-                <span className="shrink-0 text-sm text-muted">
-                  {award.year}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </AnimatedSection>
     </>
   );
 }
